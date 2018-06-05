@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#34495e">
+  <title>Hexo 標籤外掛(Tag Plugins) | Kate&#39;s 筆記倉庫</title>
+  <link rel="alternate" href="path/of/rss" type="application/atom+xml">
+  <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+
+  
+
+  
+
+</head>
+
+<body>
+  <div class="mobile-header">
+    <span><i class="iconfont icon-turnon" id="mobile-nav-toggle"></i></span>
+    <div class="mobile-logo">
+      <a href="/.">Kate&#39;s 筆記倉庫</a>
+    </div>
+  </div>
+  <div class="page" id="mobile-nav-panel">
+    <div class="container">
+      <header class="site-nav">
+    <div class="nav-content">
+      <div class="logo">
+        <a href="/">Kate&#39;s 筆記倉庫</a>
+      </div>
+      <div class="social-links">
+        
+          
+              
+          
+              
+          
+            <a href="https://github.com/katesu">
+              <i class="iconfont icon-github"></i>
+            </a>
+            
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+      </div>
+      <nav class="navbar clearfix center-block">
+        <ul>
+          
+            <li class="menu-item">
+              <a href="/" class="menu-item-link"><i class="iconfont icon-home"></i>Home</a>
+            </li>
+          
+            <li class="menu-item">
+              <a href="/archives" class="menu-item-link"><i class="iconfont icon-archive"></i>Archive</a>
+            </li>
+          
+            <li class="menu-item">
+              <a href="/categories" class="menu-item-link"><i class="iconfont icon-category"></i>Category</a>
+            </li>
+          
+            <li class="menu-item">
+              <a href="/tags" class="menu-item-link"><i class="iconfont icon-tags"></i>Tags</a>
+            </li>
+          
+            <li class="menu-item">
+              <a href="/about" class="menu-item-link"><i class="iconfont icon-about"></i>About</a>
+            </li>
+          
+          <li>
+            <form class="search-form">
+              <input type="text" id="js-search-site-nav" class="search-input menu-search-input"/>
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </div>
+</header>
+      <div class="banner">
+  <div class="show">
+    <!-- <img src="/" alt="banner"> -->
+    <div class="banner-title">
+      
+        <div class="post-title">
+          Hexo 標籤外掛(Tag Plugins)
+            <div class="post-tags">
+    		    
+    	      </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+      <main class="main"id="main">
+          <article class="post">
+  
+
+  <header>
+    <div class="post-title mobile-post-title">
+      <h1>Hexo 標籤外掛(Tag Plugins)</h1>
+        <div class="post-tags">
+        
+        </div>
+    </div>
+    <div class="post-meta">
+      <span class="post-time"><i class="iconfont icon-calendar"></i>2018-03-14</span>
+      
+        <span class="post-updated"><i class="iconfont icon-divide"></i>更新於2018-05-23</span>
+      
+      
+          
+            <i class="iconfont icon-divide"></i>
+            <i class="iconfont icon-folder" style="color: #8a8a8a;"></i>
+            <a class="post-category" href="/categories/Hexo/">Hexo</a>
+          
+      
+      <!----------------------------------->
+        
+      <!----------------------------------->
+    </div>
+  </header>
+  
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">目錄</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#文句引用"><span class="toc-text">文句引用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一般的quote"><span class="toc-text">一般的quote</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#quote-具作者與出處"><span class="toc-text">quote 具作者與出處</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#嵌入-youtube"><span class="toc-text">嵌入 YouTube</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#嵌入程式碼"><span class="toc-text">嵌入程式碼</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#jsfiddle"><span class="toc-text">JSFiddle</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#codepen"><span class="toc-text">CodePen</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gist"><span class="toc-text">gist</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#references"><span class="toc-text">References</span></a></li></ol>
+    </div>
+  </div>
+
+
+  <div class="post-content">
+    <p>標籤外掛能夠引用文章內容或是嵌入外部的影片、程式碼</p>
+<a id="more"></a>
+<h2 id="文句引用"><a class="header-anchor" href="#文句引用"></a>文句引用</h2>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;</span><br><span class="line">引用內容</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="一般的quote"><a class="header-anchor" href="#一般的quote"></a>一般的quote</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote %&#125;</span><br><span class="line">可愛就是正義!</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
+<blockquote><p>可愛就是正義!</p>
+</blockquote>
+<h3 id="quote-具作者與出處"><a class="header-anchor" href="#quote-具作者與出處"></a>quote 具作者與出處</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote ディオ・ブランド, ジョジョの奇妙な冒険Part1 ファントムブラッド %&#125;</span><br><span class="line">俺は人间をやめるぞ、JOJO</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
+<blockquote><p>俺は人间をやめるぞ、JOJO</p>
+<footer><strong>ディオ・ブランド</strong><cite>ジョジョの奇妙な冒険Part1 ファントムブラッド</cite></footer></blockquote>
+<h2 id="嵌入-youtube"><a class="header-anchor" href="#嵌入-youtube"></a>嵌入 YouTube</h2>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube 影片ID %&#125;</span><br></pre></td></tr></table></figure>
+<div class="video-container"><iframe src="//www.youtube.com/embed/uRtLmZwutII" frameborder="0" allowfullscreen></iframe></div>
+<p>但影片尺寸無法調整。</p>
+<p>改用 Swig 標籤 raw 嵌入 YouTube 的嵌入程式碼，<br>
+raw 標籤中的內容不會被轉譯。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;iframe width=&quot;854&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/uRtLmZwutII&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/uRtLmZwutII" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<h2 id="嵌入程式碼"><a class="header-anchor" href="#嵌入程式碼"></a>嵌入程式碼</h2>
+<h3 id="jsfiddle"><a class="header-anchor" href="#jsfiddle"></a>JSFiddle</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% jsfiddle shorttag [tabs] [skin] [width] [height] %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="codepen"><a class="header-anchor" href="#codepen"></a>CodePen</h3>
+<p>使用 raw 標籤，嵌入方法與 raw 嵌入 YouTube 相同</p>
+<h3 id="gist"><a class="header-anchor" href="#gist"></a>gist</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gist gist_id [/filename] %&#125;</span><br></pre></td></tr></table></figure>
+<script src="//gist.github.com/katesu/4feded35cd1b78051d9996f3a6942aeb.js"></script>
+<h2 id="references"><a class="header-anchor" href="#references"></a>References</h2>
+<ol>
+<li><a href="https://hexo.io/zh-tw/docs/tag-plugins.html" target="_blank" rel="noopener">標籤外掛（Tag Plugins）</a> @Hexo</li>
+<li><a href="https://noname4me.github.io/2017/10/21/hexo-iframe/" target="_blank" rel="noopener">hexo嵌入在线代码演示（codepen、jsFiddle等）</a> @辣手摧花</li>
+</ol>
+
+  </div>
+  <div class="post-footer">the end</div>
+</article>
+          
+  <nav class="pagination post-nav">
+    
+      <a href="/css/2018/03/17/responsive-vidio/">
+        <span class="prev-post"><i class="iconfont icon-back"></i>嵌入影片RWD</span>
+      </a>
+    
+    
+      <a href="/JavaScript/2018/03/09/javascript-js30-3/">
+        <span class="next-post">Day3 Playing with CSS Variables and JS<i class="iconfont icon-more"></i></span>
+      </a>
+    
+  </nav>
+
+
+          
+  
+  <div id="disqus_thread"></div>
+<script>
+    var shortName = 'katesublog'
+    var disqus_config = function () {
+     this.page.url = 'http://katesu.github.io/index.html/Hexo/2018/03/14/hexo-tag-plungis/';  // Replace PAGE_URL with your page's canonical URL variable
+     this.page.identifier = 'post'+'-Hexo/2018/03/14/hexo-tag-plungis/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+     };
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//'+shortName+'.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<script id="dsq-count-scr" src="//katesublog.disqus.com/count.js" async></script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+
+      </main>
+    </div>
+    <footer>
+      
+        <div class="quote">
+          <p>No Code No Life</p>
+        </div>
+      
+      <div class="copyright">
+        <p>
+          由 <a href="https://hexo.io/">Hexo</a> 驅動
+          <span>|</span>
+          主题 - <a href="https://github.com/wa-ri/hexo-theme-ztopic">ztopic</a
+        </p>
+        <p>
+          <span>
+          
+          &copy;
+          
+            2018
+          
+          </span>
+          <i class="iconfont icon-circle"></i>
+          <span>Kate Su</span>
+        </p>
+      </div>
+</footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <div id="mobile-nav">
+  <nav id="mobile-nav-menu">
+    
+      <a href="/" class="mobile-nav-link">
+        <i class="iconfont icon-home"></i>Home
+      </a>
+    
+      <a href="/archives" class="mobile-nav-link">
+        <i class="iconfont icon-archive"></i>Archive
+      </a>
+    
+      <a href="/categories" class="mobile-nav-link">
+        <i class="iconfont icon-category"></i>Category
+      </a>
+    
+      <a href="/tags" class="mobile-nav-link">
+        <i class="iconfont icon-tags"></i>Tags
+      </a>
+    
+      <a href="/about" class="mobile-nav-link">
+        <i class="iconfont icon-about"></i>About
+      </a>
+    
+    <div class="social-links">
+      
+        
+            
+        
+            
+        
+          <a href="https://github.com/katesu">
+            <i class="iconfont icon-github"></i>
+          </a>
+          
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+    </div>
+    <form class="search-form">
+      <input type="text" id="js-search-mobile-nav" class="search-input menu-search-input" />
+    </form>
+    <div class="mobile-intro"><i class="iconfont icon-pen"></i>keep calm and code on</div>
+  </nav>
+</div>
+
+  <div class="search-result">
+    <div id="js-search-backdrop" class="search-backdrop"></div>
+    <div class="local-search-result-container">
+        <form class="search-form">
+            <input type="text" id="js-local-search-input" class="search-input local-search-input" placeholder="search" />
+            <span class='local-search-close'>
+                 <span class="icon">×</span>
+            </span>
+        </form>
+        <div id="js-local-search-result" class="local-search-result"></div>
+    </div>
+</div>
+  
+  <script src="/libs/jQuery/jquery-3.2.1.min.js"></script>
+  <script src="/libs/slideout/slideout.min.js"></script>
+  
+    <link rel="stylesheet" href="/libs/fancybox/jquery.fancybox.css">
+    <script src="/libs/fancybox/jquery.fancybox.pack.js"></script>
+    
+  <script src="/libs/search/search.js"></script>
+  
+
+  <script src="/js/ztopic.js"></script>
+</body>
+</html>
