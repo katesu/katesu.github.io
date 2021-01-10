@@ -48,7 +48,7 @@
       var tocState = {
         start: {
           'position': 'absolute',
-          'top': minScrollTop - 340
+          'top': minScrollTop - 250
         },
         process: {
           'position': 'fixed',
@@ -56,12 +56,12 @@
         },
         end: {
           'position': 'absolute',
-          'top': maxScrollTop - 340
+          'top': maxScrollTop - 250
         }
       }
 
       $(window).scroll(function () {
-        var scrollTop = $(window).scrollTop() + 80;
+        var scrollTop = $(window).scrollTop() + 50;
 
         if (scrollTop < minScrollTop) {
           $toc.css(tocState.start);
