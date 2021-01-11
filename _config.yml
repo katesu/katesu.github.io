@@ -12,8 +12,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://katesu.github.io
-root: /katesu.github.io/
+url: http://katesu.github.io/index.html
+root: /
 permalink: :category/:year/:month/:day/:title/
 permalink_defaults:
 
