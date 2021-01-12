@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#34495e">
+  <title>Day2 CSS + JS Clock | Time in a bottle</title>
+  <link rel="alternate" href="path/of/rss" type="application/atom+xml">
+  <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+
+  
+
+  
+
+  
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+  <div class="mobile-header">
+    <span><i class="iconfont icon-turnon" id="mobile-nav-toggle"></i></span>
+    <div class="mobile-logo">
+      <a href="/.">Time in a bottle</a>
+    </div>
+  </div>
+  <div class="page" id="mobile-nav-panel">
+    <div class="container">
+      <header class="site-nav">
+    <div class="nav-content">
+      <div class="logo">
+        <a href="/">Time in a bottle</a>
+      </div>
+      <div class="social-links">
+        
+          
+              
+          
+              
+          
+            <a target="_blank" rel="noopener" href="https://github.com/katesu">
+              <i class="iconfont icon-github"></i>
+            </a>
+            
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+      </div>
+      <nav class="navbar clearfix center-block">
+        <ul>
+          
+            <li class="menu-item">
+              <a href="/" class="menu-item-link"><i class="iconfont icon-home"></i>Home</a>
+            </li>
+          
+            <li class="menu-item">
+              <a href="/archives" class="menu-item-link"><i class="iconfont icon-archive"></i>Archive</a>
+            </li>
+          
+            <li class="menu-item">
+              <a href="/categories" class="menu-item-link"><i class="iconfont icon-category"></i>Category</a>
+            </li>
+          
+            <li class="menu-item">
+              <a href="/tags" class="menu-item-link"><i class="iconfont icon-tags"></i>Tags</a>
+            </li>
+          
+            <li class="menu-item">
+              <a href="/about" class="menu-item-link"><i class="iconfont icon-about"></i>About</a>
+            </li>
+          
+          <li>
+            <form class="search-form">
+              <input type="text" id="js-search-site-nav" class="search-input menu-search-input"/>
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </div>
+</header>
+      <div class="banner">
+  <div class="show">
+    <!-- <img src="/" alt="banner"> -->
+    <div class="banner-title">
+      
+        <div class="post-title">
+          Day2 CSS + JS Clock
+            <div class="post-tags">
+    		    
+              <a class="tag-none-link" href="/tags/JavaScript30/" rel="tag">JavaScript30</a> <a class="tag-none-link" href="/tags/native-JS/" rel="tag">native JS</a>
+            
+    	      </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+      <main class="main"id="main">
+          <article class="post">
+  
+
+  <header>
+    <div class="post-title mobile-post-title">
+      <h1>Day2 CSS + JS Clock</h1>
+        <div class="post-tags">
+        
+          <a class="tag-none-link" href="/tags/JavaScript30/" rel="tag">JavaScript30</a> <a class="tag-none-link" href="/tags/native-JS/" rel="tag">native JS</a>
+        
+        </div>
+    </div>
+    <div class="post-meta">
+      <span class="post-time"><i class="iconfont icon-calendar"></i>2018-02-25</span>
+      
+        <span class="post-updated"><i class="iconfont icon-divide"></i>更新於2018-06-09</span>
+      
+      
+          
+            <i class="iconfont icon-divide"></i>
+            <i class="iconfont icon-folder" style="color: #8a8a8a;"></i>
+            <a class="post-category" href="/categories/JavaScript/">JavaScript</a>
+          
+      
+      <!----------------------------------->
+        
+      <!----------------------------------->
+    </div>
+  </header>
+  
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">目錄</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#functions"><span class="toc-text">Functions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#steps"><span class="toc-text">Steps</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fixed"><span class="toc-text">Fixed</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#improvements"><span class="toc-text">Improvements</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#css"><span class="toc-text">CSS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#native-js"><span class="toc-text">Native JS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#references"><span class="toc-text">References</span></a></li></ol>
+    </div>
+  </div>
+
+
+  <div class="post-content">
+    <p>JavaScript30 Day2 筆記</p>
+<a id="more"></a>
+<h2 id="functions"><a class="header-anchor" href="#functions"></a>Functions</h2>
+<ul>
+<li>時針、分針、秒針依時間改變旋轉
+<ul>
+<li><strong>系統</strong>每秒、分、時自動更新指針角度</li>
+</ul>
+</li>
+</ul>
+<h2 id="steps"><a class="header-anchor" href="#steps"></a>Steps</h2>
+<ol>
+<li>宣告 setInterval function: setDate
+<ul>
+<li>get seconds/ minutes/ hours of current and turns them into degrees
+<ul>
+<li>秒：secs/60算出比例乘上360度</li>
+<li>分：概念同上</li>
+<li>時：huors/12算出比例乘上360度</li>
+</ul>
+</li>
+<li>document.style.transform = rotate(…) 改變指針角度</li>
+</ul>
+</li>
+<li>setInterval(setDate, 1000)
+<ul>
+<li>每1000毫秒(1秒)執行一次 setDate</li>
+</ul>
+</li>
+</ol>
+<h2 id="fixed"><a class="header-anchor" href="#fixed"></a>Fixed</h2>
+<ul>
+<li>
+<p>指針與實際指針相差90度</p>
+<ol>
+<li>原因：一開始水平指針被 CSS rotate(90)改變成垂直，JS 修改角度是從0度開始</li>
+<li>作法：JS 每秒改變的角度還要加上90度</li>
+</ol>
+</li>
+<li>
+<p>秒針歸零時會閃一下</p>
+<ol>
+<li>原因：<code>transition: all 0.05s</code>，60秒450度到0秒90度是向後旋轉， transition 0.05s duration 會看到秒針閃一下</li>
+<li>作法：
+<ul>
+<li>讓秒針不歸零</li>
+<li>60秒到0秒之間取消 transition</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="improvements"><a class="header-anchor" href="#improvements"></a>Improvements</h2>
+<ul>
+<li>時針沒按比例移動，直接跳1/12格</li>
+</ul>
+<h2 id="css"><a class="header-anchor" href="#css"></a>CSS</h2>
+<ul>
+<li><code>transform-orign: 100% / x y</code></li>
+<li><code>rotate(deg)</code>
+<ul>
+<li>+deg - 順時針</li>
+<li>-deg - 逆時針</li>
+</ul>
+</li>
+</ul>
+<h2 id="native-js"><a class="header-anchor" href="#native-js"></a>Native JS</h2>
+<ul>
+<li><code>new Date()</code> - 獲得當前時間</li>
+<li><code>new Date.getSeconds()</code> - 取得當前時間秒數</li>
+<li><code>new Date.getMinets()</code> - 取得當前時間分鐘</li>
+<li><code>new Date.getHours()</code> - 取得當前時間小時</li>
+<li><code>setInterval(func, milliseconds)</code> - 每多少毫秒重複執行 func</li>
+</ul>
+<h2 id="references"><a class="header-anchor" href="#references"></a>References</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval" target="_blank" rel="noopener">WindowOrWorkerGlobalScope.setInterval() - Web APIs</a> @MDN Web Docs</li>
+<li><a href="http://boohover.pixnet.net/blog/post/35341387" target="_blank" rel="noopener">CSS transform 能旋轉、傾斜、縮放變形 box</a> @網頁藝術思考</li>
+<li><a href="https://wcc723.github.io/css/2013/10/10/css-transform-origin/" target="_blank" rel="noopener">CSS沒有極限 - CSS transform-origin</a> @前端，沒有極限</li>
+</ul>
+
+  </div>
+  <div class="post-footer">the end</div>
+</article>
+          
+  <nav class="pagination post-nav">
+    
+      <a href="/JavaScript/2018/03/09/javascript-js30-3/">
+        <span class="prev-post"><i class="iconfont icon-back"></i>Day3 Playing with CSS Variables and JS</span>
+      </a>
+    
+    
+      <a href="/JavaScript/2018/02/23/javascript-js30-1/">
+        <span class="next-post">Day1 JavaScript Drum Kit<i class="iconfont icon-more"></i></span>
+      </a>
+    
+  </nav>
+
+
+          
+  
+  <div id="disqus_thread"></div>
+<script>
+    var shortName = 'katesublog'
+    var disqus_config = function () {
+     this.page.url = 'http://katesu.github.io/index.html/JavaScript/2018/02/25/javascript-js30-2/';  // Replace PAGE_URL with your page's canonical URL variable
+     this.page.identifier = 'post'+'-JavaScript/2018/02/25/javascript-js30-2/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+     };
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//'+shortName+'.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<script id="dsq-count-scr" src="//katesublog.disqus.com/count.js" async></script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+
+      </main>
+    </div>
+    <footer>
+      
+        <div class="quote">
+          <p>But there never seem to be enough time to do the things you want to do</p>
+        </div>
+      
+      <div class="copyright">
+        <p>
+          由 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 驅動
+          <span>|</span>
+          主题 - <a target="_blank" rel="noopener" href="https://github.com/wa-ri/hexo-theme-ztopic">ztopic</a
+        </p>
+        <p>
+          <span>
+          
+          &copy;
+          
+            2021
+          
+          </span>
+          <i class="iconfont icon-circle"></i>
+          <span>Kate</span>
+        </p>
+      </div>
+</footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <div id="mobile-nav">
+  <nav id="mobile-nav-menu">
+    
+      <a href="/" class="mobile-nav-link">
+        <i class="iconfont icon-home"></i>Home
+      </a>
+    
+      <a href="/archives" class="mobile-nav-link">
+        <i class="iconfont icon-archive"></i>Archive
+      </a>
+    
+      <a href="/categories" class="mobile-nav-link">
+        <i class="iconfont icon-category"></i>Category
+      </a>
+    
+      <a href="/tags" class="mobile-nav-link">
+        <i class="iconfont icon-tags"></i>Tags
+      </a>
+    
+      <a href="/about" class="mobile-nav-link">
+        <i class="iconfont icon-about"></i>About
+      </a>
+    
+    <div class="social-links">
+      
+        
+            
+        
+            
+        
+          <a target="_blank" rel="noopener" href="https://github.com/katesu">
+            <i class="iconfont icon-github"></i>
+          </a>
+          
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+    </div>
+    <form class="search-form">
+      <input type="text" id="js-search-mobile-nav" class="search-input menu-search-input" />
+    </form>
+    <div class="mobile-intro">Kate的技術筆記聚集地</div>
+  </nav>
+</div>
+
+  <div class="search-result">
+    <div id="js-search-backdrop" class="search-backdrop"></div>
+    <div class="local-search-result-container">
+        <form class="search-form">
+            <input type="text" id="js-local-search-input" class="search-input local-search-input" placeholder="search" />
+            <span class='local-search-close'>
+                 <span class="icon">×</span>
+            </span>
+        </form>
+        <div id="js-local-search-result" class="local-search-result"></div>
+    </div>
+</div>
+  
+  
+<script src="/libs/jQuery/jquery-3.2.1.min.js"></script>
+
+  
+<script src="/libs/slideout/slideout.min.js"></script>
+
+  
+    
+<link rel="stylesheet" href="/libs/fancybox/jquery.fancybox.css">
+
+    
+<script src="/libs/fancybox/jquery.fancybox.pack.js"></script>
+
+    
+  
+<script src="/libs/search/search.js"></script>
+
+  
+
+  
+<script src="/js/ztopic.js"></script>
+
+</body>
+</html>

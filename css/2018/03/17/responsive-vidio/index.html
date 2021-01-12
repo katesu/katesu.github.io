@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#34495e">
+  <title>嵌入影片RWD | Time in a bottle</title>
+  <link rel="alternate" href="path/of/rss" type="application/atom+xml">
+  <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+
+  
+
+  
+
+  
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+  <div class="mobile-header">
+    <span><i class="iconfont icon-turnon" id="mobile-nav-toggle"></i></span>
+    <div class="mobile-logo">
+      <a href="/.">Time in a bottle</a>
+    </div>
+  </div>
+  <div class="page" id="mobile-nav-panel">
+    <div class="container">
+      <header class="site-nav">
+    <div class="nav-content">
+      <div class="logo">
+        <a href="/">Time in a bottle</a>
+      </div>
+      <div class="social-links">
+        
+          
+              
+          
+              
+          
+            <a target="_blank" rel="noopener" href="https://github.com/katesu">
+              <i class="iconfont icon-github"></i>
+            </a>
+            
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+      </div>
+      <nav class="navbar clearfix center-block">
+        <ul>
+          
+            <li class="menu-item">
+              <a href="/" class="menu-item-link"><i class="iconfont icon-home"></i>Home</a>
+            </li>
+          
+            <li class="menu-item">
+              <a href="/archives" class="menu-item-link"><i class="iconfont icon-archive"></i>Archive</a>
+            </li>
+          
+            <li class="menu-item">
+              <a href="/categories" class="menu-item-link"><i class="iconfont icon-category"></i>Category</a>
+            </li>
+          
+            <li class="menu-item">
+              <a href="/tags" class="menu-item-link"><i class="iconfont icon-tags"></i>Tags</a>
+            </li>
+          
+            <li class="menu-item">
+              <a href="/about" class="menu-item-link"><i class="iconfont icon-about"></i>About</a>
+            </li>
+          
+          <li>
+            <form class="search-form">
+              <input type="text" id="js-search-site-nav" class="search-input menu-search-input"/>
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </div>
+</header>
+      <div class="banner">
+  <div class="show">
+    <!-- <img src="/" alt="banner"> -->
+    <div class="banner-title">
+      
+        <div class="post-title">
+          嵌入影片RWD
+            <div class="post-tags">
+    		    
+    	      </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+      <main class="main"id="main">
+          <article class="post">
+  
+
+  <header>
+    <div class="post-title mobile-post-title">
+      <h1>嵌入影片RWD</h1>
+        <div class="post-tags">
+        
+        </div>
+    </div>
+    <div class="post-meta">
+      <span class="post-time"><i class="iconfont icon-calendar"></i>2018-03-17</span>
+      
+        <span class="post-updated"><i class="iconfont icon-divide"></i>更新於2018-06-09</span>
+      
+      
+          
+            <i class="iconfont icon-divide"></i>
+            <i class="iconfont icon-folder" style="color: #8a8a8a;"></i>
+            <a class="post-category" href="/categories/css/">css</a>
+          
+      
+      <!----------------------------------->
+        
+      <!----------------------------------->
+    </div>
+  </header>
+  
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">目錄</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#rwd%E5%BD%B1%E7%89%87%E7%AF%84%E4%BE%8B"><span class="toc-text">RWD影片範例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#idea"><span class="toc-text">Idea</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#code"><span class="toc-text">Code</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AD%89%E6%AF%94%E4%BE%8B%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="toc-text">等比例的容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E4%BD%8D%E5%BD%B1%E7%89%87%E4%BD%8D%E7%BD%AE%E8%88%87%E5%B0%BA%E5%AF%B8"><span class="toc-text">定位影片位置與尺寸</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#try-false"><span class="toc-text">Try &amp; False</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#references"><span class="toc-text">References</span></a></li></ol>
+    </div>
+  </div>
+
+
+  <div class="post-content">
+    <p><a href="http://localhost:4000/Hexo/2018/02/22/hexo-tag-plungis/" target="_blank" rel="noopener">Hexo 標籤外掛(Tag Plugins)</a>中的嵌入的 youtube 影片方式都固定尺寸的影片，也可藉由css設定修改成RWD</p>
+<a id="more"></a>
+<h2 id="rwd影片範例"><a class="header-anchor" href="#rwd影片範例"></a>RWD影片範例</h2>
+<div class="video-rwd">
+    <iframe src="https://www.youtube.com/embed/uRtLmZwutII" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<h2 id="idea"><a class="header-anchor" href="#idea"></a>Idea</h2>
+<p>在<code>&lt;iframe&gt;</code>外層建立一個寬高等比例且寬度隨視窗縮放的容器，使<code>&lt;iframe&gt;</code>寬高與該容器相同。</p>
+<h2 id="code"><a class="header-anchor" href="#code"></a>Code</h2>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;div class=&quot;video-rwd&quot;&gt;</span><br><span class="line">    &lt;iframe src=&quot;https://www.youtube.com/embed/uRtLmZwutII&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.video-rwd</span>&#123;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">padding-bottom</span>: <span class="number">56.2%</span>;</span><br><span class="line">    <span class="selector-tag">iframe</span>,</span><br><span class="line">    <span class="selector-tag">object</span>,</span><br><span class="line">    <span class="selector-tag">embed</span>&#123;</span><br><span class="line">        <span class="attribute">position</span>: absolute;</span><br><span class="line">        <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">        <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">        <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">        <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="等比例的容器"><a class="header-anchor" href="#等比例的容器"></a>等比例的容器</h3>
+<p>youtobe 影片比例為 寬16:高9，等於 寬1:高0.5625，當<code>padding</code>和<code>margin</code>單位為 % 時會以父層的<code>width</code>為參考值，以此特性建立了<code>width: 100%</code>與父層同寬的<code>.video-rwd</code>，其<code>padding-bottom</code>為父層寬度的 56.52%。</p>
+<p>當<code>.video-rwd</code>寬為 100px 時，<code>padding</code>是 56.52px，寬高比維持16:9。</p>
+<p>使用<code>padding-top</code>或<code>padding-bottom</code>哪一個都可以，在此是藉其 % 以父層為參考值變動的特點，保持容器16:9的尺寸。</p>
+<h3 id="定位影片位置與尺寸"><a class="header-anchor" href="#定位影片位置與尺寸"></a>定位影片位置與尺寸</h3>
+<p>因為父層<code>.video-rwd</code>沒有高度，所以使用<code>position: absolute</code>將<code>&lt;iframe&gt;</code>定位在父層右上角，並且將寬高設定 100% 與父層相同，固定16:9的比例。</p>
+<h3 id="try-false"><a class="header-anchor" href="#try-false"></a>Try &amp; False</h3>
+<p>一開始是將<code>&lt;iframe&gt;</code>定位 top/left/bottom/right 0，完全對齊父層，結果影片只有300x150。</p>
+<p>在 stackflow 查到</p>
+<blockquote><p>We need to style the iframe container mainly because an iframe on itself doesn’t let itself be sized with top/left/bottom/right. But what will work is setting its width and height to 100%.</p>
+<footer><strong>sg3s answered Sep 30 2011 at 18:55</strong><cite><a href="https://stackoverflow.com/questions/3979000/iframe-and-conflicting-absolute-positions" target="_blank" rel="noopener">IFRAME and conflicting absolute positions</a></cite></footer></blockquote>
+<p><code>&lt;iframe&gt;</code>無法以 top/left/bottom/right 控制寬高尺寸而改成寬高 100%。</p>
+<h2 id="references"><a class="header-anchor" href="#references"></a>References</h2>
+<ol>
+<li><a href="https://www.webdesigns.com.tw/youtube-rwd.asp" target="_blank" rel="noopener">如何將youtube影片嵌入RWD(自適應網頁)</a> @一化網頁設計</li>
+</ol>
+
+  </div>
+  <div class="post-footer">the end</div>
+</article>
+          
+  <nav class="pagination post-nav">
+    
+      <a href="/ubuntu/2018/05/02/install-ubuntu-on-win10/">
+        <span class="prev-post"><i class="iconfont icon-back"></i>在 WIN10 安裝 LINUX 雙系統(ubuntu)，以 acer aspire V3-372 為例</span>
+      </a>
+    
+    
+      <a href="/Hexo/2018/03/14/hexo-tag-plungis/">
+        <span class="next-post">Hexo 標籤外掛(Tag Plugins)<i class="iconfont icon-more"></i></span>
+      </a>
+    
+  </nav>
+
+
+          
+  
+  <div id="disqus_thread"></div>
+<script>
+    var shortName = 'katesublog'
+    var disqus_config = function () {
+     this.page.url = 'http://katesu.github.io/index.html/css/2018/03/17/responsive-vidio/';  // Replace PAGE_URL with your page's canonical URL variable
+     this.page.identifier = 'post'+'-css/2018/03/17/responsive-vidio/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+     };
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//'+shortName+'.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<script id="dsq-count-scr" src="//katesublog.disqus.com/count.js" async></script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+
+      </main>
+    </div>
+    <footer>
+      
+        <div class="quote">
+          <p>But there never seem to be enough time to do the things you want to do</p>
+        </div>
+      
+      <div class="copyright">
+        <p>
+          由 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 驅動
+          <span>|</span>
+          主题 - <a target="_blank" rel="noopener" href="https://github.com/wa-ri/hexo-theme-ztopic">ztopic</a
+        </p>
+        <p>
+          <span>
+          
+          &copy;
+          
+            2021
+          
+          </span>
+          <i class="iconfont icon-circle"></i>
+          <span>Kate</span>
+        </p>
+      </div>
+</footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <div id="mobile-nav">
+  <nav id="mobile-nav-menu">
+    
+      <a href="/" class="mobile-nav-link">
+        <i class="iconfont icon-home"></i>Home
+      </a>
+    
+      <a href="/archives" class="mobile-nav-link">
+        <i class="iconfont icon-archive"></i>Archive
+      </a>
+    
+      <a href="/categories" class="mobile-nav-link">
+        <i class="iconfont icon-category"></i>Category
+      </a>
+    
+      <a href="/tags" class="mobile-nav-link">
+        <i class="iconfont icon-tags"></i>Tags
+      </a>
+    
+      <a href="/about" class="mobile-nav-link">
+        <i class="iconfont icon-about"></i>About
+      </a>
+    
+    <div class="social-links">
+      
+        
+            
+        
+            
+        
+          <a target="_blank" rel="noopener" href="https://github.com/katesu">
+            <i class="iconfont icon-github"></i>
+          </a>
+          
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+    </div>
+    <form class="search-form">
+      <input type="text" id="js-search-mobile-nav" class="search-input menu-search-input" />
+    </form>
+    <div class="mobile-intro">Kate的技術筆記聚集地</div>
+  </nav>
+</div>
+
+  <div class="search-result">
+    <div id="js-search-backdrop" class="search-backdrop"></div>
+    <div class="local-search-result-container">
+        <form class="search-form">
+            <input type="text" id="js-local-search-input" class="search-input local-search-input" placeholder="search" />
+            <span class='local-search-close'>
+                 <span class="icon">×</span>
+            </span>
+        </form>
+        <div id="js-local-search-result" class="local-search-result"></div>
+    </div>
+</div>
+  
+  
+<script src="/libs/jQuery/jquery-3.2.1.min.js"></script>
+
+  
+<script src="/libs/slideout/slideout.min.js"></script>
+
+  
+    
+<link rel="stylesheet" href="/libs/fancybox/jquery.fancybox.css">
+
+    
+<script src="/libs/fancybox/jquery.fancybox.pack.js"></script>
+
+    
+  
+<script src="/libs/search/search.js"></script>
+
+  
+
+  
+<script src="/js/ztopic.js"></script>
+
+</body>
+</html>
